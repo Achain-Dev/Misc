@@ -641,7 +641,7 @@
       },
       {
         "method_name": "blockchain_dump_state",
-        "description": "TODO",
+        "description": "Dump the leveldb data into json file",
          "cached"      : true,
         "return_type": "void",
         "parameters"  : [
@@ -649,6 +649,12 @@
               "name" : "path",
               "type" : "string",
               "description" : "the directory to dump the state into"
+           },
+           {
+              "name" : "ldbname",
+              "type" : "string",
+              "description" : "the leveldb to dump the state",
+              "default_value" : "ALL"
            }
         ],
         "is_const"   : true,
